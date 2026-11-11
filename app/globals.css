@@ -49,3 +49,18 @@
 @media(max-width:550px){.stage,.door-wrap{width:min(100vw,56.25svh);height:auto;aspect-ratio:9/16;min-height:0}.invite-content{width:79%;height:70%;margin-top:0;transform:none}.brand{font-size:clamp(13px,5.3cqw,29px)}.tag{font-size:clamp(6px,1.65cqw,10px);letter-spacing:.075em;margin:1.8cqw 0 3.4cqw}.invite-content h1{font-size:clamp(34px,15cqw,82px)}.solo{font-size:clamp(13px,4.5cqw,25px)}.separator{margin:3.8cqw auto}.date{font-size:clamp(19px,7.3cqw,40px)}.venue{font-size:clamp(8px,2.3cqw,13px);margin-top:3.5cqw}.time{font-size:clamp(14px,4.2cqw,23px);margin:1cqw 0 3.7cqw}.actions{gap:1.5cqw}.action{font-size:clamp(7px,1.7cqw,10px);min-height:clamp(30px,7.6cqw,42px);padding:0 clamp(7px,2.3cqw,14px)}}
 @media(max-height:680px){.invite-content{transform:none}}
 @media(max-width:320px){.actions{flex-wrap:wrap}.action{min-height:30px}}
+
+/* Formal invitation copy and balanced responsive spacing */
+.invite-content{height:76%;width:81%}
+.tag{text-transform:none;letter-spacing:.045em;margin:1.2cqw 0 2.7cqw;font-style:italic;font-weight:400;font-family:'Cormorant Garamond',serif;font-size:clamp(10px,2.8cqw,16px)}
+.invite-intro{font:400 clamp(11px,3.1cqw,17px) 'Cormorant Garamond',serif;letter-spacing:.035em;margin-bottom:2.3cqw}
+.invite-content h1{font-size:clamp(34px,14cqw,76px)}
+.solo{font-size:clamp(13px,4cqw,23px);letter-spacing:.08em;margin-top:1.2cqw}
+.invite-message{font:italic 400 clamp(10px,2.7cqw,15px)/1.35 'Cormorant Garamond',serif;max-width:85%;margin-top:2.8cqw}
+.separator{margin:3cqw auto}
+.date{font-size:clamp(18px,6.3cqw,35px);letter-spacing:.02em;text-transform:none}
+.time{font-size:clamp(13px,3.8cqw,21px);margin:1.4cqw 0 1.2cqw}
+.venue{font-size:clamp(10px,2.7cqw,15px);font-weight:500;letter-spacing:.025em;margin:0 0 3.5cqw;text-transform:none}
+.actions{flex-direction:row-reverse}
+.actions .filled{background:#673a17;color:#fff7ea}
+@media(max-width:550px){.invite-content{height:76%;width:81%}.tag{font-size:clamp(10px,2.8cqw,16px);margin:1.2cqw 0 2.7cqw}.invite-content h1{font-size:clamp(34px,14cqw,76px)}.solo{font-size:clamp(13px,4cqw,23px)}.separator{margin:3cqw auto}.date{font-size:clamp(18px,6.3cqw,35px)}.time{font-size:clamp(13px,3.8cqw,21px);margin:1.4cqw 0 1.2cqw}.venue{font-size:clamp(10px,2.7cqw,15px);margin:0 0 3.5cqw}}
