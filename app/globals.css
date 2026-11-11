@@ -13,3 +13,19 @@
 @media(max-width:550px){.stage,.door-wrap{width:min(100vw,56.25svh);height:min(100svh,177.78vw);aspect-ratio:9/16;min-height:0}.invite-content{height:63%}.door-image{background-size:100% 100%}}
 @media(max-height:680px){.invite-content{transform:scale(.85)}}
 .rsvp-overlay{position:fixed;inset:0;z-index:100;background:#07101bcb;display:grid;place-items:center;padding:15px}.rsvp-dialog{position:relative;background:#fff8ed;color:#33251e;width:min(440px,95vw);max-height:90svh;overflow:auto;padding:30px;display:grid;gap:14px;text-align:left;box-shadow:0 15px 80px #0007}.rsvp-dialog h2{font:30px Georgia,serif;margin:0}.rsvp-dialog label{font:12px Arial;display:grid;gap:6px}.rsvp-dialog input,.rsvp-dialog select{padding:12px;border:1px solid #bca38c;background:white;color:#34251c}.rsvp-dialog button[type=submit]{background:#58371f;color:white;border:0;padding:13px;cursor:pointer}.rsvp-x{position:absolute;right:8px;top:8px;background:transparent;border:0;cursor:pointer}
+/* Door transition correction: never paint a second full closed-door layer underneath the moving halves. */
+.door-image{display:none!important}
+.door-wrap{visibility:visible;opacity:1;transition:none!important;overflow:hidden}
+.scene-open .door-wrap{visibility:hidden}
+.scene-opening .door-half.left,.scene-open .door-half.left{transform:rotateY(-115deg)}
+.scene-opening .door-half.right,.scene-open .door-half.right{transform:rotateY(115deg)}
+.scene-closing .door-half.left,.scene-closed .door-half.left{transform:rotateY(0deg)}
+.scene-closing .door-half.right,.scene-closed .door-half.right{transform:rotateY(0deg)}
+.scene-closing .door-wrap,.scene-closed .door-wrap{visibility:visible}
+.scene-open .door-wrap{pointer-events:none}
+.assets-loading .stage,.assets-loading .gallery-scene,.assets-loading .door-wrap{visibility:hidden}
+.assets-loading{background:#e9d3bc}
+.assets-loading::after{content:"STUDIO SERAAI";position:absolute;inset:0;display:grid;place-items:center;font:500 22px 'Cormorant Garamond',Georgia,serif;letter-spacing:.17em;color:#563b2c}
+.assets-ready .stage,.assets-ready .gallery-scene,.assets-ready .door-wrap{visibility:visible}
+.assets-ready.scene-open .door-wrap{visibility:hidden}
+@media(prefers-reduced-motion:reduce){.door-half{transition:none!important}}
