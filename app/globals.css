@@ -13,3 +13,47 @@
 .entry{position:absolute;inset:0;z-index:5;background:transparent;border:0;color:#e9c49a;display:flex;flex-direction:column;align-items:center;text-shadow:0 2px 12px #120502}.entry-brand{margin-top:24%;font:400 clamp(22px,4vw,44px) 'Cormorant Garamond',serif;letter-spacing:.2em}.entry-tag{margin-top:14px;letter-spacing:.32em;font-size:9px}.entry-bottom{position:absolute;bottom:12%;font-size:11px;letter-spacing:.25em;display:flex;align-items:center;flex-direction:column;gap:20px}.circle{display:grid;place-items:center;border:1px solid #e9c49a;width:48px;height:48px;border-radius:50%;font-size:22px}.close-doors{position:absolute;bottom:10px;right:16px;color:#fff2dc;border:0;background:transparent;font-size:10px;letter-spacing:.15em}
 @media(max-width:650px){.portal{width:92vw;height:78svh;min-height:570px;border-width:9px}.art{width:40%}.invitation{padding:12px 7px 38px}.invitation h1{font-size:60px}.tagline{font-size:7px}.date{font-size:24px}.venue{font-size:8px}.buttons{flex-direction:column;gap:8px}.buttons button,.buttons a{width:185px;padding:11px}.entry-brand{margin-top:54%;font-size:25px}.entry-tag{font-size:7px}.door{border-width:5px}.handle{height:70px;width:8px}.door-left .handle{right:9px}.door-right .handle{left:9px}}
 @media(prefers-reduced-motion:reduce){.door{transition:none}}
+
+/* Refined opened-door gallery scene */
+.inside{background:radial-gradient(ellipse at center,#fff8ec 0%,#f2e3cf 55%,#d0ad8c 100%)}
+.inside:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#071b2822,transparent 32%,transparent 68%,#071b2822);pointer-events:none}
+.inside:after{height:5%;opacity:.7}
+.art{width:33%;opacity:.85;filter:saturate(.8) contrast(1.1)}
+.art.left{left:-4%;mask-image:linear-gradient(90deg,#000 0%,#000 50%,transparent 100%)}
+.art.right{right:-4%;mask-image:linear-gradient(270deg,#000 0%,#000 50%,transparent 100%)}
+.invitation{width:min(76%,620px);min-height:76%;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:40px 32px 52px;background:linear-gradient(180deg,#fffaf2f5,#f7ecdcf2);border:1px solid #ad896b77;box-shadow:0 15px 55px #4b291c2b;color:#302722;text-shadow:none;backdrop-filter:blur(3px)}
+.invitation:before,.invitation:after{content:"";position:absolute;width:30px;height:30px;border-color:#aa8667;border-style:solid;pointer-events:none}
+.invitation:before{left:16px;top:16px;border-width:1px 0 0 1px}
+.invitation:after{right:16px;bottom:16px;border-width:0 1px 1px 0}
+.brand-small{color:#3b2b25;font-size:clamp(21px,2.5vw,32px)}
+.tagline{color:#846650;letter-spacing:.27em;margin:8px 0 27px}
+.invitation h1{color:#25252b;font-size:clamp(62px,8vw,108px);letter-spacing:-.045em;margin:0 0 9px}
+.solo{color:#81523a;font-size:clamp(16px,2vw,23px)}
+.rule{width:90px;background:#ae805e;margin:21px auto}
+.date{color:#342c29;font-size:clamp(24px,3vw,35px);letter-spacing:.1em}
+.venue{color:#775c4a;margin:15px 0 25px}
+.guest{color:#785743}
+.buttons{gap:11px}
+.buttons button,.buttons a{border-radius:3px;min-height:46px;letter-spacing:.1em;transition:background .2s,transform .2s}
+.buttons button{background:#39251f;border-color:#39251f;color:#fff4e7}
+.buttons a{background:#fff8ed;border-color:#a88a73;color:#4d3328}
+.buttons button:hover,.buttons a:hover{transform:translateY(-2px)}
+.buttons button:hover{background:#5b3628}.buttons a:hover{background:#ebdcc8}
+.invitation small{color:#876e5b}
+@media(max-width:650px){
+.portal{height:min(83svh,790px);min-height:590px}
+.art{width:40%}
+.invitation{width:89%;min-height:76%;padding:28px 12px 38px}
+.invitation:before{left:9px;top:9px}.invitation:after{right:9px;bottom:9px}
+.brand-small{font-size:clamp(18px,5vw,25px)}
+.tagline{font-size:6.5px;letter-spacing:.18em;margin:8px 0 23px}
+.invitation h1{font-size:clamp(50px,13vw,74px)}
+.solo{font-size:15px;letter-spacing:.2em}
+.rule{margin:16px auto}
+.date{font-size:clamp(20px,5vw,27px);letter-spacing:.07em}
+.venue{font-size:8px;letter-spacing:.1em;margin:13px 0 19px}
+.buttons{width:100%;gap:8px}
+.buttons button,.buttons a{width:min(90%,230px);min-height:42px;font-size:10px}
+.invitation small{font-size:9px;margin-top:13px}
+}
+@media(max-width:370px){.invitation{width:93%;padding:22px 8px}.invitation h1{font-size:48px}.date{font-size:20px}}
