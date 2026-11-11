@@ -1,0 +1,1 @@
+import type { Metadata } from 'next';import './globals.css';export const metadata:Metadata={title:'SM Naqvi — Solo Exhibition | Studio Seraai',description:'You are invited to SM Naqvi’s solo exhibition, 25 November 2026, Studio Seraai, Karachi.'};export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}</body></html>}
