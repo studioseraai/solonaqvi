@@ -57,3 +57,13 @@
 .invitation small{font-size:9px;margin-top:13px}
 }
 @media(max-width:370px){.invitation{width:93%;padding:22px 8px}.invitation h1{font-size:48px}.date{font-size:20px}}
+
+/* White sculptural gallery doors and event-time styling */
+.door{background:linear-gradient(105deg,#d8d7d3 0%,#fffefb 23%,#f1f0ed 54%,#c5c5c2 100%);border-color:#b9b7b1;box-shadow:inset 0 0 22px #77736a42,0 0 18px #21191055}
+.door-panel{border:3px double #b6b2aa;box-shadow:inset 0 0 28px #a7a5a044,0 0 6px #fff9;background:repeating-linear-gradient(95deg,#ffffff28 0 2px,transparent 3px 10px)}
+.handle{border-color:#aa8961;background:linear-gradient(90deg,#806748,#e5caa1,#96764c);box-shadow:2px 4px 8px #55453555}
+.entry{color:#403a34;text-shadow:0 1px 4px #ffffffaa}
+.circle{border-color:#73695f}
+.event-time{font-family:'Cormorant Garamond',Georgia,serif;color:#704b36;font-size:clamp(21px,2.6vw,29px);font-weight:500;letter-spacing:.08em;margin:-10px 0 23px}
+.event-time span{font-family:Inter,sans-serif;font-size:9px;letter-spacing:.12em;vertical-align:middle}
+@media(max-width:650px){.entry-tag{letter-spacing:.11em;font-size:7px}.event-time{font-size:22px;margin:-6px 0 15px}.tagline{letter-spacing:.08em;font-size:6.5px}}
