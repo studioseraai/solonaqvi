@@ -64,3 +64,27 @@
 .actions{flex-direction:row-reverse}
 .actions .filled{background:#673a17;color:#fff7ea}
 @media(max-width:550px){.invite-content{height:76%;width:81%}.tag{font-size:clamp(10px,2.8cqw,16px);margin:1.2cqw 0 2.7cqw}.invite-content h1{font-size:clamp(34px,14cqw,76px)}.solo{font-size:clamp(13px,4cqw,23px)}.separator{margin:3cqw auto}.date{font-size:clamp(18px,6.3cqw,35px)}.time{font-size:clamp(13px,3.8cqw,21px);margin:1.4cqw 0 1.2cqw}.venue{font-size:clamp(10px,2.7cqw,15px);margin:0 0 3.5cqw}}
+
+/* Painted invitation design — use the uploaded, text-free artwork. */
+.invitation-bg{background:#f4e6d2 url('/studio-seraai-invitation-art.webp') center/100% 100% no-repeat;box-shadow:none}
+.invite-content{width:80%;height:65%;margin-top:0;color:#482412}
+.seraai-mark{position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;text-align:left;width:max-content;margin:0 auto 2.5cqw;padding:2.8cqw 2.6cqw 1.1cqw 2cqw;border-left:clamp(2px,.7cqw,4px) solid #4b2815;font-family:'Cormorant Garamond',Georgia,serif;line-height:.72;color:#44210e}
+.seraai-mark::before{content:"";position:absolute;right:0;top:0;width:56%;height:clamp(2px,.7cqw,4px);background:#4b2815}
+.seraai-mark::after{content:"";position:absolute;right:0;top:0;height:73%;width:clamp(2px,.7cqw,4px);background:#4b2815}
+.seraai-mark span{font-size:clamp(17px,5.3cqw,29px);font-weight:400;line-height:1}
+.seraai-mark strong{font-size:clamp(27px,8.1cqw,44px);font-weight:500;letter-spacing:-.045em;line-height:.88}
+.tag{font-size:clamp(11px,3.1cqw,17px);font-style:italic;margin:1cqw 0 3.3cqw;line-height:1.1}
+.invite-intro{font-size:clamp(12px,3.8cqw,21px);font-style:italic;margin-bottom:2.5cqw}
+.invite-content h1{font-size:clamp(37px,13.3cqw,72px);line-height:.92}
+.solo{font-size:clamp(13px,4.2cqw,23px);text-transform:uppercase;letter-spacing:.19em;margin-top:1.2cqw}
+.invite-message{font-size:clamp(11px,3.3cqw,18px);line-height:1.2;max-width:92%;margin-top:3.8cqw}
+.separator{margin:3.1cqw auto;width:25%;height:1px}
+.date{font-size:clamp(21px,7.1cqw,38px)}
+.time{font-size:clamp(12px,4.2cqw,23px);margin:1.2cqw 0}
+.venue{font-size:clamp(12px,3.5cqw,19px);margin:1.1cqw 0 4cqw}
+.actions{gap:2cqw;flex-wrap:nowrap}
+.actions .action{font-size:clamp(8px,2cqw,11px);font-weight:600;min-height:clamp(31px,7.5cqw,42px);padding:0 clamp(8px,2.6cqw,16px)}
+.actions .filled{background:#57270f;color:#fff9ed;border-color:#57270f}
+.actions .outline{background:#fff9ed60;border-color:#57270f;color:#57270f}
+@media(max-width:550px){.invite-content{width:80%;height:65%;margin-top:0}.tag{font-size:clamp(11px,3.1cqw,17px);margin:1cqw 0 3.3cqw}.invite-content h1{font-size:clamp(37px,13.3cqw,72px)}.solo{font-size:clamp(13px,4.2cqw,23px)}.separator{margin:3.1cqw auto}.date{font-size:clamp(21px,7.1cqw,38px)}.time{font-size:clamp(12px,4.2cqw,23px);margin:1.2cqw 0}.venue{font-size:clamp(12px,3.5cqw,19px);margin:1.1cqw 0 4cqw}}
+@media(max-width:350px){.invite-content{height:70%}.seraai-mark{margin-bottom:1cqw}.tag{margin-bottom:2cqw}.invite-message{margin-top:2cqw}.venue{margin-bottom:2cqw}}
